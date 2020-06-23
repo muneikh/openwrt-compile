@@ -2,6 +2,10 @@ FROM ubuntu
 
 Maintainer "Muneeb Sheikh" <muneeb118@gmail.com>
 
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y git
+    
 RUN git clone https://git.openwrt.org/openwrt/openwrt.git
 
 RUN cd openwrt
