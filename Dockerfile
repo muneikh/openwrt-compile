@@ -2,8 +2,6 @@ FROM ubuntu
 
 Maintainer "Muneeb Sheikh" <muneeb118@gmail.com>
 
-RUN sudo apt-get install git
-
 RUN git clone https://git.openwrt.org/openwrt/openwrt.git
 
 RUN cd openwrt
