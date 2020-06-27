@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM mint
 
 Maintainer "Muneeb Sheikh" <muneeb118@gmail.com>
 
@@ -9,6 +9,8 @@ RUN apt-get update && \
 RUN git clone https://git.openwrt.org/openwrt/openwrt.git
 
 RUN cd openwrt
+
+RUN echo 'pwd'
 
 RUN ./scripts/feeds update -a
 
