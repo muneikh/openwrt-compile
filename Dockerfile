@@ -10,8 +10,6 @@ RUN git clone https://git.openwrt.org/openwrt/openwrt.git
 
 RUN cd openwrt
 
-RUN echo '::pwd'
-
 RUN ./scripts/feeds update -a
 
 RUN ./scripts/feeds install -a
