@@ -14,6 +14,6 @@ WORKDIR openwrt
 
 RUN ./scripts/feeds update -a && ./scripts/feeds install -a
 
-RUN menuconfig
+RUN make menuconfig
 
 RUN make -j1 V=s:
